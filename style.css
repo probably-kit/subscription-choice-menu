@@ -1,9 +1,10 @@
-body{
+body {
     background-color: #111;
-    color:white
+    color: white;
+    font-family: 'Raleway', sans-serif;
 }
 
-.container{
+.container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -12,61 +13,67 @@ body{
     margin-top: 1em;
 }
 
-.payment-info{
+.payment-info {
+    display: flex;
+    align-items: center;
+    margin-block: -1em;
+}
+
+
+.description-card {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 0.5em;
-}
-.info{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.5em;
-}
-
-.description-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
     gap: 0.2em;
-    margin:1em;
 }
 
-.description-card{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-    gap: 0.2m;
-}
-.txt{
+.txt {
     font-size: 12px;
+    margin-bottom: 0px;
 }
 
-.crossed{
+.pink-border {
+    border: 1px solid #ff3683;
+    /* border: 1px solid #ff0a68; */
+}
+
+.gray-border {
+    border: 1px solid #888;
+}
+
+.violet-border {
+    border: 1px solid #c739ff;
+}
+
+.crossed {
     text-decoration: line-through;
     color: #888;
 }
 
-.card{
+.card {
     background-color: #222;
-    color:white;
+    color: white;
     padding: 1em;
+    padding-inline: 2em;
     margin: 0.5em;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    border: 1px solid #888;
+    align-items: start;
 }
 
-button{
+.price{
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+button {
     background-color: #333;
-    color:white;
+    color: white;
     padding: 10px;
     border: none;
-    border-radius: 5px;
+    width: 15em;
+    border-radius: 25px;
+    margin-top: 1em;
     cursor: pointer;
+    align-self: center;
 }
