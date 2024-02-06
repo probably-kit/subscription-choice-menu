@@ -10,14 +10,21 @@ body {
     justify-content: space-around;
     flex-direction: column;
     align-items: center;
-    margin-top: 1em;
+    margin-top: 1.5em;
+    gap: 1.5em;
 }
 
 .payment-info {
     display: flex;
     align-items: center;
     margin-block: -1em;
+    gap: 0.8em;
 }
+
+.payment-info > h1 + .price{
+margin-left: -0.5em;
+}
+
 
 
 .description-card {
@@ -37,12 +44,26 @@ body {
     /* border: 1px solid #ff0a68; */
 }
 
+.pink-background {
+    background-color: #ff3683;
+    /* background-color: #ff0a68; */
+}
+
 .gray-border {
     border: 1px solid #888;
 }
 
+.gray-background {
+    background-color: #888;
+
+}
+
 .violet-border {
     border: 1px solid #c739ff;
+}
+
+.violet-background {
+    background-color: #c739ff;
 }
 
 .crossed {
@@ -60,14 +81,32 @@ body {
     display: flex;
     flex-direction: column;
     align-items: start;
+    position: relative;
 }
 
-.price{
+.sale-title {
+    /* Or any color that signifies a sale */
+    color: white;
+    text-align: center;
+    width: 25%;
+    position: absolute;
+    /* Make sure the parent has a position:relative */
+    top: -1em;
+    /* Adjust this value based on your design */
+    left: 1em;
+    padding: 5px 0;
+    /* Adjust padding as needed */
+    border-radius: 25px;
+    align-self: center;
+}
+
+
+.price {
     font-family: 'Barlow Condensed', sans-serif;
 }
 
 button {
-    background-color: #333;
+    background-color: #ff0040;
     color: white;
     padding: 10px;
     border: none;
@@ -83,7 +122,8 @@ button:hover {
 
     transform: scale(1.1);
 }
+
 button:active {
     transform: scale(1);
-    background-color: #444;
+    background-color: #ff0020;
 }
